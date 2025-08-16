@@ -86,8 +86,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "default";
+        Alpha {
+            display-name = "alpha";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -103,12 +103,10 @@
 &kp LEFT_CONTROL  &kp Z            &kp X            &kp C                &kp V              &kp B      &kp LBKT     &kp RBKT   &kp N      &kp M               &kp COMMA             &kp DOT           &kp FSLH             &kp RSHFT
                                    &none            &none                &kp LCTRL          &mo LOWER  &kp SPACE    &kp ENTER  &mo RAISE  &kp RCTRL           &none                 &none
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        lower_layer {
-            display-name = "lower";
+        Symbol {
+            display-name = "symbol";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
