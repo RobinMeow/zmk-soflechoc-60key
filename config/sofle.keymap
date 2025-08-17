@@ -169,21 +169,21 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none       &none            &trans       &trans        &trans          &trans                         &trans     &trans         &trans          &trans                &none                  &none
-&caps_word  &kp EXCLAMATION  &kp AT       &kp HASH      &kp DOLLAR      &kp PERCENT                    &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp TAB     &hml LCMD A      &hml LALT A  &hml LCTRL A  &hml LSHIFT A   &kp GRAVE                      &kp LEFT   &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
-&none       &kp TILDE        &kp MINUS    &kp PLUS      &kp UNDERSCORE  &kp EQUAL    &trans    &trans  &kp HOME   &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
-                             &trans       &trans        &krl 0 ESC      &trans       &trans    &trans  &trans     &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE
+&none       &none            &trans       &trans        &trans          &trans                                   &trans         &trans         &trans          &trans                &none                  &none
+&caps_word  &kp EXCLAMATION  &kp AT       &kp HASH      &kp DOLLAR      &kp PERCENT                              &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp TAB     &hml LCMD A      &hml LALT A  &hml LCTRL A  &hml LSHIFT A   &kp GRAVE                                &kp LEFT       &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
+&none       &kp TILDE        &kp MINUS    &kp PLUS      &kp UNDERSCORE  &kp EQUAL    &trans          &trans      &kp HOME       &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
+                             &trans       &trans        &krl 0 ESC      &kp SPACE    &mol 2 ENTER    &mor 2 TAB  &kp BACKSPACE  &krr 0 DELETE  &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
 
         Fn-and-Number {
             bindings = <
-&trans  &trans        &trans        &trans         &trans          &trans                    &trans           &trans                   &trans                  &trans                 &trans             &trans
-&trans  &kp F1        &kp F2        &kp F3         &kp F4          &trans                    &kp PERCENT      &kp KP_NUMBER_7          &kp KP_NUMBER_8         &kp KP_NUMBER_9        &trans             &trans
-&trans  &hml LCMD F5  &hml LALT F6  &hml LCTRL F7  &hml LSHIFT F8  &trans                    &kp KP_DIVIDE    &hmr RSHIFT KP_NUMBER_4  &hmr RCTRL KP_NUMBER_5  &hmr RALT KP_NUMBER_6  &hmr RCMD KP_PLUS  &trans
-&trans  &kp F9        &kp F10       &kp F11        &kp F12         &trans  &trans    &trans  &kp KP_MULTIPLY  &kp KP_NUMBER_1          &kp KP_NUMBER_2         &kp KP_NUMBER_3        &kp KP_SUBTRACT    &trans
-                      &trans        &trans         &krl 0 ESC      &trans  &trans    &trans  &trans           &kp KP_NUMBER_0          &kp COMMA               &kp PERIOD
+&trans  &trans        &trans        &trans         &trans          &trans                              &trans           &trans                   &trans                  &trans                 &trans             &trans
+&trans  &kp F1        &kp F2        &kp F3         &kp F4          &trans                              &kp PERCENT      &kp KP_NUMBER_7          &kp KP_NUMBER_8         &kp KP_NUMBER_9        &trans             &trans
+&trans  &hml LCMD F5  &hml LALT F6  &hml LCTRL F7  &hml LSHIFT F8  &trans                              &kp KP_DIVIDE    &hmr RSHIFT KP_NUMBER_4  &hmr RCTRL KP_NUMBER_5  &hmr RALT KP_NUMBER_6  &hmr RCMD KP_PLUS  &trans
+&trans  &kp F9        &kp F10       &kp F11        &kp F12         &trans        &trans       &trans   &kp KP_MULTIPLY  &kp KP_NUMBER_1          &kp KP_NUMBER_2         &kp KP_NUMBER_3        &kp KP_SUBTRACT    &trans
+                      &trans        &trans         &krl 0 ESC      &mol 1 SPACE  &kp ENTER    &kp TAB  &kp BACKSPACE    &kp KP_NUMBER_0          &kp COMMA               &kp PERIOD
             >;
 
             label = "fn_and_number";
@@ -200,11 +200,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans      &trans        &trans            &trans       &trans                      &trans           &trans    &trans         &trans        &trans     &trans
-&trans  &kp INS     &kp PSCRN     &kp K_CMENU       &trans       &trans                      &kp INS          &trans    &trans         &trans        &trans     &trans
-&trans  &kp LCMD    &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT   &kp CLCK                    &kp PAUSE_BREAK  &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY        &kp K_PASTE  &trans    &trans    &trans  &kp HOME         &kp END   &kp PAGE_DOWN  &kp PG_UP     &trans     &trans
-                    &trans        &trans            &krl 0 ESC   &trans    &trans    &trans  &trans           &trans    &trans         &trans
+&trans  &trans      &trans        &trans            &trans       &trans                          &trans            &trans         &trans         &trans        &trans     &trans
+&trans  &kp INS     &kp PSCRN     &kp K_CMENU       &trans       &trans                          &kp INS           &trans         &trans         &trans        &trans     &trans
+&trans  &kp LCMD    &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT   &kp CLCK                        &kp PAUSE_BREAK   &kp LEFT       &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY        &kp K_PASTE  &trans    &trans    &trans      &kp HOME          &kp END        &kp PAGE_DOWN  &kp PG_UP     &trans     &trans
+                    &trans        &trans            &krl 0 ESC   &trans    &trans    &mor 2 TAB  &mor 1 BACKSPACE  &krr 0 DELETE  &trans         &trans
             >;
         };
 
