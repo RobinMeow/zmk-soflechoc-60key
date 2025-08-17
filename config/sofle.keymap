@@ -117,11 +117,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none    &none            &trans       &trans        &trans         &trans                         &trans     &trans         &trans          &trans                &none                  &none
-&trans   &kp EXCLAMATION  &kp AT       &kp HASH      &kp DOLLAR     &kp PERCENT                    &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp TAB  &hml LCMD A      &hml LALT A  &hml LCTRL A  &hml LSHIFT A  &kp A                          &kp LEFT   &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
-&none    &kp A            &kp A        &kp A         &kp A          &kp A        &trans    &trans  &kp HOME   &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
-                          &kp A        &kp A         &trans         &trans       &trans    &trans  &trans     &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE
+&none    &none            &trans                &trans                 &trans          &trans                         &trans     &trans         &trans          &trans                &none                  &none
+&trans   &kp EXCLAMATION  &kp AT                &kp HASH               &kp DOLLAR      &kp PERCENT                    &kp CARET  &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&kp TAB  &hml LCMD A      &hml LALT A           &hml LCTRL A           &hml LSHIFT A   &kp GRAVE                      &kp LEFT   &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
+&none    &kp TILDE        &kp MINUS             &kp PLUS               &kp UNDERSCORE  &kp EQUAL    &trans    &trans  &kp HOME   &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
+                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &trans       &trans    &trans  &trans     &trans         &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
 
