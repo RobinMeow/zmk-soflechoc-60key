@@ -117,11 +117,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none    &none          &trans            &trans             &trans         &trans                                  &trans       &trans                &trans                 &trans      &none          &none
-&trans   &kp A          &kp A             &kp A              &kp A          &kp A                                   &kp HOME     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp END     &trans         &trans
-&kp TAB  &hml LCMD A    &hml LALT A       &hml LCTRL A       &hml LSHIFT A  &kp SLASH                               &kp LEFT     &kp DOWN              &kp UP_ARROW           &kp RIGHT   &kp SEMICOLON  &kp DOUBLE_QUOTES
-&trans   &kp AMPERSAND  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp PLUS       &kp NON_US_BACKSLASH  &trans    &trans  &kp AT_SIGN  &kp COLON             &kp COMMA              &kp PERIOD  &kp QUESTION   &trans
-                        &kp PERCENT       &kp HASH           &trans         &trans                &trans    &trans  &trans       &trans                &kp TILDE              &kp GRAVE
+&none    &none        &trans       &trans        &trans         &trans                    &trans       &trans    &trans                &trans                 &none         &none
+&trans   &kp A        &kp A        &kp A         &kp A          &kp A                     &kp HOME     &kp A     &kp A                 &kp END                &trans        &kp PIPE
+&kp TAB  &hml LCMD A  &hml LALT A  &hml LCTRL A  &hml LSHIFT A  &kp A                     &kp LEFT     &kp DOWN  &kp UP_ARROW          &kp RIGHT              &kp COLON     &kp DOUBLE_QUOTES
+&trans   &kp A        &kp A        &kp A         &kp A          &kp A   &trans    &trans  &kp AT_SIGN  &kp A     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+                      &kp A        &kp A         &trans         &trans  &trans    &trans  &trans       &trans    &kp LEFT_BRACE        &kp RIGHT_BRACE
             >;
         };
 
