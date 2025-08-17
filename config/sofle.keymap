@@ -23,7 +23,7 @@
 
         adjust_layer {
             if-layers = <1 3>;
-            then-layer = <5>;
+            then-layer = <3>;
         };
     };
 
@@ -171,8 +171,8 @@
             bindings = <
 &none       &none            &trans       &trans        &trans          &trans                                   &kp INS        &kp PAGE_DOWN  &kp PG_UP       &kp PAUSE_BREAK       &kp CAPSLOCK           &kp PSCRN
 &caps_word  &kp EXCLAMATION  &kp AT       &kp HASH      &kp DOLLAR      &kp PERCENT                              &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp TAB     &hml LCMD A      &hml LALT A  &hml LCTRL A  &hml LSHIFT A   &kp GRAVE                                &kp LEFT       &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
-&none       &kp TILDE        &kp MINUS    &kp PLUS      &kp UNDERSCORE  &kp EQUAL    &trans          &trans      &kp HOME       &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
+&kp PLUS    &hml LCMD A      &hml LALT A  &hml LCTRL A  &hml LSHIFT A   &kp GRAVE                                &kp LEFT       &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
+&none       &kp TILDE        &trans       &kp MINUS     &kp UNDERSCORE  &trans       &trans          &trans      &kp HOME       &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
                              &trans       &trans        &krl 0 ESC      &kp SPACE    &mol 2 ENTER    &mor 2 TAB  &kp BACKSPACE  &krr 0 DELETE  &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
@@ -187,38 +187,6 @@
             >;
 
             label = "fn_and_number";
-        };
-
-        Nav {
-            display-name = "nav";
-
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-            // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-            // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-            // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-            //                |      |       |       |      |      |  |      |      |      |       |      |
-
-            bindings = <
-&trans  &trans      &trans        &trans            &trans       &trans                          &trans            &trans         &trans         &trans        &trans     &trans
-&trans  &kp INS     &kp PSCRN     &kp K_CMENU       &trans       &trans                          &kp INS           &trans         &trans         &trans        &trans     &trans
-&trans  &kp LCMD    &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LSHIFT   &kp CLCK                        &kp PAUSE_BREAK   &kp LEFT       &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY        &kp K_PASTE  &trans    &trans    &trans      &kp HOME          &kp END        &kp PAGE_DOWN  &kp PG_UP     &trans     &trans
-                    &trans        &trans            &krl 0 ESC   &trans    &trans    &mor 2 TAB  &mor 1 BACKSPACE  &krr 0 DELETE  &trans         &trans
-            >;
-        };
-
-        Gaming {
-            display-name = "alpha";
-            bindings = <
-&none            &kp N1  &kp N2                &kp N3                 &kp N4      &kp N5                                    &kp N6     &kp N7              &kp N8                &kp N9             &kp N0               &none
-&kp EXCLAMATION  &kp Q   &kp W                 &kp E                  &kp R       &kp T                                     &kp Y      &kp U               &kp I                 &kp O              &kp P                &kp PIPE
-&kp EQUAL        &kp A   &kp S                 &kp D                  &kp F       &kp G                                     &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L   &hmr RIGHT_GUI SEMI  &kp SQT
-&kp TILDE        &kp Z   &kp X                 &kp C                  &kp V       &kp B        &none         &none          &kp N      &kp M               &kp COMMA             &kp DOT            &kp FSLH             &kp MINUS
-                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &krl 0 ESC  &lt 1 SPACE  &kp ESCAPE    &kp BACKSPACE  &lt 1 DEL  &lt 0 TAB           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-            >;
-
-            label = "gaming";
         };
 
         adjust_layer {
@@ -239,6 +207,19 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        Gaming {
+            display-name = "alpha";
+            bindings = <
+&none      &kp N1           &kp N2                &kp N3                 &kp N4             &kp N5                                    &kp N6            &kp N7              &kp N8                &kp N9             &kp N0               &none
+&trans     &kp Q            &kp W                 &kp E                  &kp R              &kp T                                     &kp Y             &kp U               &kp I                 &kp O              &kp P                &kp BACKSLASH
+&kp EQUAL  &hml LEFT_GUI A  &hml LEFT_ALT S       &hml LEFT_CONTROL D    &hml LEFT_SHIFT F  &kp G                                     &kp H             &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L   &hmr RIGHT_GUI SEMI  &kp SQT
+&none      &kp Z            &kp X                 &kp C                  &kp V              &kp B         &none           &none       &kp N             &kp M               &kp COMMA             &kp DOT            &kp FSLH             &none
+                            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &krl 0 ESC         &mol 1 SPACE  &mol 2 ENTER    &mor 2 TAB  &mor 1 BACKSPACE  &krr 0 DELETE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+            >;
+
+            label = "gaming";
         };
     };
 };
