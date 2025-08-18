@@ -149,11 +149,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none      &kp N1           &kp N2                &kp N3                 &kp N4             &kp N5                                    &kp N6            &kp N7              &kp N8                &kp N9             &kp N0               &none
-&trans     &kp Q            &kp W                 &kp E                  &kp R              &kp T                                     &kp Y             &kp U               &kp I                 &kp O              &kp P                &kp BACKSLASH
-&kp EQUAL  &hml LEFT_GUI A  &hml LEFT_ALT S       &hml LEFT_CONTROL D    &hml LEFT_SHIFT F  &kp G                                     &kp H             &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L   &hmr RIGHT_GUI SEMI  &kp SQT
-&none      &kp Z            &kp X                 &kp C                  &kp V              &kp B         &none           &tog 3      &kp N             &kp M               &kp COMMA             &kp DOT            &kp FSLH             &none
-                            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &krl 0 ESC         &mol 1 SPACE  &mol 2 ENTER    &mor 2 TAB  &mor 1 BACKSPACE  &krr 0 DELETE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&none   &kp N1           &kp N2                &kp N3                 &kp N4             &kp N5                                    &kp N6            &kp N7              &kp N8                &kp N9             &kp N0               &none
+&trans  &kp Q            &kp W                 &kp E                  &kp R              &kp T                                     &kp Y             &kp U               &kp I                 &kp O              &kp P                &kp BACKSLASH
+&trans  &hml LEFT_GUI A  &hml LEFT_ALT S       &hml LEFT_CONTROL D    &hml LEFT_SHIFT F  &kp G                                     &kp H             &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L   &hmr RIGHT_GUI SEMI  &kp SQT
+&none   &kp Z            &kp X                 &kp C                  &kp V              &kp B         &none           &tog 3      &kp N             &kp M               &kp COMMA             &kp DOT            &kp FSLH             &none
+                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &krl 0 ESC         &mol 1 SPACE  &mol 2 ENTER    &mor 2 TAB  &mor 1 BACKSPACE  &krr 0 DELETE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET
             >;
         };
 
@@ -169,11 +169,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none       &none            &trans       &trans        &trans          &trans                                   &kp INS        &kp PAGE_DOWN  &kp PG_UP       &kp PAUSE_BREAK       &kp CAPSLOCK           &kp PSCRN
-&caps_word  &kp EXCLAMATION  &kp AT       &kp HASH      &kp DOLLAR      &kp PERCENT                              &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp PLUS    &hml LCMD A      &hml LALT A  &hml LCTRL A  &hml LSHIFT A   &kp GRAVE                                &kp LEFT       &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
-&none       &trans           &trans       &kp MINUS     &kp UNDERSCORE  &kp TILDE    &trans          &trans      &kp HOME       &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
-                             &trans       &trans        &krl 0 ESC      &kp SPACE    &mol 2 ENTER    &mor 2 TAB  &kp BACKSPACE  &krr 0 DELETE  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&none       &none            &trans       &trans           &trans             &trans                                   &kp INS        &kp PAGE_DOWN  &kp PG_UP       &kp PAUSE_BREAK       &kp CAPSLOCK           &kp PSCRN
+&caps_word  &kp EXCLAMATION  &kp AT       &kp HASH         &kp DOLLAR         &kp PERCENT                              &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
+&trans      &hml LCMD A      &hml LALT A  &hml LCTRL PLUS  &hml LSHIFT MINUS  &kp GRAVE                                &kp LEFT       &kp DOWN       &kp UP_ARROW    &kp RIGHT             &kp COLON              &kp DOUBLE_QUOTES
+&none       &trans           &trans       &kp EQUAL        &kp UNDERSCORE     &kp TILDE    &trans          &trans      &kp HOME       &kp END        &kp LESS_THAN   &kp GREATER_THAN      &kp QUESTION           &none
+                             &trans       &trans           &krl 0 ESC         &kp SPACE    &mol 2 ENTER    &mor 2 TAB  &kp BACKSPACE  &krr 0 DELETE  &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
 
